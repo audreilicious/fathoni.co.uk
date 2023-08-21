@@ -1,0 +1,89 @@
+<html><meta style="visibility: hidden !important; display: block !important; width: 0px !important; height: 0px !important; border-style: none !important;"><embed id="__IDM__" type="application/x-idm-downloader" width="1" height="1" style="visibility: hidden !important; display: block !important; width: 1px !important; height: 1px !important; border-style: none !important; position: absolute !important; top: 0px !important; left: 0px !important;"></meta><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Fire</title>
+
+<style type="text/css">
+body{
+	background:#000;
+	color:Orange;
+	height:100%;
+	margin:0;
+	padding:0;
+	width:100%;
+}
+a{color:gold;}
+a:hover{color:#FF0;}
+address{
+	bottom:10px;
+	font-family:Georgia;
+	font-style:normal;
+	position:absolute;
+	right:10px;
+	text-align:right;
+}
+</style>
+</head><body oncontextmenu="return false;" onkeydown="return false;" onmousedown="return false;">
+
+<center style="height: 100%;">
+ <table height="100%">
+  <tbody><tr>
+   <td>
+    <b>
+     <pre id="o">                                                                                
+                                                                                
+                                       .                                        
+                                     .:*:                                 .:.   
+.........               ...:.       .:ss*.                        ..    .:**::.:
+::::**::.         .....::::*::.    .:*ss*:.     .:.               ..    .:***:::
+***sSSs*:.       .::::*******:......:sSs**:.  .:**:..             .......:ss****
+*sS###s*:.      .:***sSsssss*:::::::*sSsss*:.:::**::.             .....:::ssssss
+sS#$$$S*:.    ...:*sS###SSss*::::::*sSSSSSs********:.....   ...........:::****ss
+sS#$$$#s*:. .:::::*sS$$##Ss**:::::*sS#####SSSSSsss*::**::....:**:......:::::**sS
+SS#$$$#Ss*:::******s#$$$#Ss*:::::*sS#$$$$$$$$$$#SSs*****::::*sSss*:..:::::::**sS
+S#$$$$$#Ss***sssssssS####Ss*::::*sS#$$$$$$$$$$$$$#Sssss****sSS#Sss*::**:::****sS
+#$$$$$$#SssssSSSSSSSsSSSSSs*:::*sS#$$$$$$$$$$$$$$$#ssssssssS##SSss********sssSS#
+$$$$$$$#SSSS##$$###SssssSSSs*:*sS##$$$$$$$$$$$$$$$$SsssssssS##SsssssssssssSS###$
+$$$$$$$#####$$$$$$#Ss*sS###SssssS#$$$$$$$$$$$$$$$$$$Sssssss#$$#SsssssSSSSSS#$$$$
+$$$$$$$$$$$$$$$$$$#Ss*s#$$$$######$$$$$$$$$$$$$$$$$$#SssssS$$$$#SsssS#$$#SS#$$$$
+$$$$$$$$$$$$$$$$$$#sss$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$##SssS$$$$$#sssS#$$SssS#$$$
+$$$$$$$$$$$$$$$$$$#S#$$$$$$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$#sS#$$$$$Ssss##Ss**S$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$#SSS#$$$$S**SSSsss$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$##$$$$$$$$$$Ss*sS$$$#**S#$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$S*s$$$$$$$$$$S*s#$$$$$**$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$#s**:*sSs:.#$$$$$$$$$$$s#$$$$$#:s$$$$$$$$$$$
+$$$$$$$$$$$$S$$$$$$$$$$$$$$$$*#$$$$$*.  s$S.. .$$$$$$#Ss$$$S$$$$$$s.*$$$$$$#$$$$
+$$$$$$$$$$$s.:$$$$$$$$$S$$$$S$$$$$$$. $$$$$   .#$$$$$...#$$s$$$$$$$ .$$$$Ss:s#Ss
+*:*s*.$$.$$.  $$.::S$$#.$$s*.$$$$S$s  $$s$s    .$$$$s   .**.$$:$$$$  s$$s   ... 
+</pre>
+    </b>
+   </td>
+  </tr>
+ </tbody></table>
+</center>
+
+<script type="text/javascript">
+var size = 80 * 25;
+var b = [];
+for (i = 0; i < size + 81; i++)
+  b[i] = 0;
+var char = " .:*sS#$".split("");
+var e = document.getElementById("o").firstChild;
+
+function f()
+{
+  for (i = 0; i < 10; i++)
+    b[Math.floor(Math.random() * 80) + 80 * 24] = 70;
+  a = "";
+  for (i = 0; i < size; i++)
+  {
+    b[i] = Math.floor((b[i] + b[i + 1] + b[i + 80] + b[i + 81]) / 4);
+    a += char[b[i] > 7 ? 7 : b[i]];
+    if (i % 80 > 78)
+      a += "\r\n";
+  }
+  e.data = a;
+  setTimeout(f, 30);
+}
+f();
+</script>
+</body></html>
